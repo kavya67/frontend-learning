@@ -29,3 +29,11 @@ let frontendEmployees = employees.filter(employee => employee.department === "Fr
 let fontendEmployeeNames = frontendEmployees.map(employee => employee.name);
 console.log(fontendEmployeeNames);
 
+//get the names of the employees whose experience is greater than 3
+
+let experiencedEmployee = employees.filter(employee => employee.experience >= 3).map(employee => employee["name"]);
+console.log(experiencedEmployee);
+
+//calculate the  total salary of all employees
+let totalSalary  = employees.reduce((total,employee) => total + employee.salary, 0);
+console.log(totalSalary)

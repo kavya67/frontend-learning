@@ -36,4 +36,4 @@ console.log(experiencedEmployee);
 
 //calculate the  total salary of all employees
 let totalSalary  = employees.reduce((total,employee) => total + employee.salary, 0);
-console.log(totalSalary)
+console.log(totalSalary);

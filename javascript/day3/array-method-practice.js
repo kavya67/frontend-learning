@@ -17,3 +17,15 @@ console.log(employeeNames);
 let nameAndSalary = employees.map(employee => ({name: employee.name, salary: employee.salary}));
 
 console.log(nameAndSalary);
+
+//get employee salary greater than 60000
+
+let highSalaryEmployees = employees.filter(employee => employee.salary > 60000);
+console.log(highSalaryEmployees);
+
+//get all frontend employees names
+
+let frontendEmployees = employees.filter(employee => employee.department === "Frontend");
+let fontendEmployeeNames = frontendEmployees.map(employee => employee.name);
+console.log(fontendEmployeeNames);
+

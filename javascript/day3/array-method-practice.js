@@ -12,3 +12,8 @@ let employeeNames = employees.map(employee => employee.name);
 
 console.log(employeeNames);
 
+//create a new array that only includes name ans salary
+
+let nameAndSalary = employees.map(employee => ({name: employee.name, salary: employee.salary}));
+
+console.log(nameAndSalary);

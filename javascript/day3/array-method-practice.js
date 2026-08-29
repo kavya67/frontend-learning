@@ -41,3 +41,13 @@ console.log(totalSalary);
 //calculate the average salary of all employees
 let averageSalary = employees.reduce((total, employee) => total + employee.salary, 0) / employees.length;
 console.log(averageSalary);
+
+//group employees by departments
+const employeesByDepartment = employees.reduce((acc, employee) => {
+  if(!acc[empoyee.department]){
+    acc[employee.department] = [];
+  }
+  acc[employee.department].push(employee.name);
+  return acc;
+},{ Frontend:[],Backend:[],QA:[]});
+console.log(employeesByDepartment);
